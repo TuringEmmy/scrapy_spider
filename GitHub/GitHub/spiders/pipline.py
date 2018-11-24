@@ -2,13 +2,9 @@
 import scrapy
 
 
-"""
-抓取啥频网站的标题
-"""
-
-class TencentSpider(scrapy.Spider):
-    name = 'tencent'
-    allowed_domains = ['tencent.com']
+class PiplineSpider(scrapy.Spider):
+    name = 'pipline'
+    allowed_domains = ['hr.tencent.com']
     start_urls = ['https://hr.tencent.com/position.php']
 
     def parse(self, response):
